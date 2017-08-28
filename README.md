@@ -2,7 +2,7 @@
 
 A Vue.js project of all live websites
 
-![preview](/media/medima.png)
+![preview](/media/media.png)
 
 ## Dev status
 ### 8-28
