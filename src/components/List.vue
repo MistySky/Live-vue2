@@ -35,22 +35,22 @@ export default {
     '$route': 'fetchData'
   },
   methods: {
-   fetchData (id=3) {
-     let _self = this
-     id = this.$route.params.id
-     axios.get(`/v1/live/${id}?&limit=&offset=0`)
-     .then(function (response) {
-       _self.listDatas = response.data.data
-       _self.show = false
-     })
-     .catch(function (error) {
-       console.log(error)
-     });
-   }
- },
- components: {
-   loading
- }
+    fetchData (id = 3) {
+      let _self = this
+      id = this.$route.params.id
+      axios.get(`/v1/live/${id}?&limit=&offset=0`)
+      .then(function (response) {
+        _self.listDatas = response.data.data
+        _self.show = false
+      })
+      .catch(function (error) {
+        console.log(error)
+      })
+    }
+  },
+  components: {
+    loading
+  }
 }
 </script>
 

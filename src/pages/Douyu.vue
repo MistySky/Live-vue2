@@ -30,11 +30,11 @@ export default {
     const _self = this
     axios.get('/v1/getColumnDetail?shortName=game')
     .then(function (response) {
-      _self.gameDatas = response.data.data;
+      _self.gameDatas = response.data.data
     })
     .catch(function (error) {
-      console.log(error);
-    });
+      console.log(error)
+    })
   }
 }
 </script>

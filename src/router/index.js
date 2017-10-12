@@ -20,7 +20,7 @@ export default new Router({
       name: 'douyu',
       component: Douyu,
       children: [
-        { path: '/douyu/:id', component: list },
+        { path: '/douyu/:id', component: list }
       ]
     }
   ]
